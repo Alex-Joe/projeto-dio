@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: sans-serif, verdana;
+	font-family: verdana;
     font-size: 14px;
 }   
 .change-logo {
@@ -16,25 +16,22 @@ body {                                      /*||Cabeçalho*/
 	 display: block;
 	 padding: 0;
 	 margin: 0;
-	 background-color: rgb(220, 220, 220);
-	 justify-content: center;
-	 
+	
 }
 .orkut-wrapper {
+	min-height: 80vh;
 	display: block;
 	margin:3%;
-	border: 1px solid rebeccapurple;
 }
 .main-logo {
 	display: flex;
 	width: 100%;
-	border: 1px solid rebeccapurple;
     align-items: center;	
 }
 .logo {
 	Width:25%;
 	height:10%;
-	border: 1px solid;
+
 }
 .logo img {
 	width: 100%;
@@ -49,8 +46,6 @@ body {                                      /*||Cabeçalho*/
 }
 .welcome h3 {
 	width: 100%;
-	border-radius: 0.5rem;
-	background-color: lightblue;
 	padding-left: 3rem;
 }
 	
@@ -60,13 +55,10 @@ body {                                      /*||Cabeçalho*/
     width: 100%;
 }                                                       /*||icones lateral esquerda*/
 .main {
-	min-height: 100vh;
 	display: flex;
-	border: 1px dashed rebeccapurple;
 }
 .icons {
 	display: block;
-	border: 1px dashed rebeccapurple;
 	
 }
 .left-icons {
@@ -80,12 +72,19 @@ body {                                      /*||Cabeçalho*/
     align-self: center;
 }
 .left-icons div {
-	margin: 1em;
+	margin: 1rem;
+}
+.msg-atuliza {
+	width: 85%;
+	margin: 3rem 1rem;
+	padding: 1rem;
+	background-color: papayawhip;
+	border: 1px solid wheat;
+	text-align: center;
 }
 .login-area { 
 display: block;                                              /*||lateral direita login*/
 width: 35%;
-min-height: 100vh;
 align-items: center;
 justify-content: center;
 
@@ -128,7 +127,13 @@ span {
                                       rgba(200,200,200,1) 50%, 
 									  rgba(240,240,240,0.8) 98%);
 }
-
+.footer {
+	Width: 100%;
+	border-radius: 0.5em;
+	background-color: lightblue;
+	padding: 1rem;
+	text-align: center;
+}
 @media (max-width: 1024px) {
 .orkut-wrapper {
 	width: 90%;
@@ -149,6 +154,7 @@ span {
 @media (max-width: 650px) {
 .orkut-wrapper {
 	border: 10px solid lightblue;
+	padding: 0;
    }
 
 .icons {
@@ -175,6 +181,10 @@ span {
 	width: 100%;
 	text-align: center;
 	margin: 0;
+	border-radius: unset;
+}
+.footer {
+	width: 100%;
 	border-radius: unset;
 }	
 }
