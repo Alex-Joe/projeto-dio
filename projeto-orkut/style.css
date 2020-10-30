@@ -1,0 +1,182 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif, verdana;
+    font-size: 14px;
+}   
+.change-logo {
+	display: none;
+}
+}
+
+body {                                      /*||Cabeçalho*/
+     width: 100%;
+	 min-height: 100vh;
+	 display: block;
+	 padding: 0;
+	 margin: 0;
+	 background-color: rgb(220, 220, 220);
+	 justify-content: center;
+	 
+}
+.orkut-wrapper {
+	display: block;
+	margin:3%;
+	border: 1px solid rebeccapurple;
+}
+.main-logo {
+	display: flex;
+	width: 100%;
+	border: 1px solid rebeccapurple;
+    align-items: center;	
+}
+.logo {
+	Width:25%;
+	height:10%;
+	border: 1px solid;
+}
+.logo img {
+	width: 100%;
+	object-fit: Cover;
+}
+.welcome {
+	Width: 100%;
+	border-radius: 0.5em;
+	background-color: lightblue;
+	margin-left: 1rem;
+	padding: 1rem;
+}
+.welcome h3 {
+	width: 100%;
+	border-radius: 0.5rem;
+	background-color: lightblue;
+	padding-left: 3rem;
+}
+	
+}
+.logo img {
+    object-fit: cover;
+    width: 100%;
+}                                                       /*||icones lateral esquerda*/
+.main {
+	min-height: 100vh;
+	display: flex;
+	border: 1px dashed rebeccapurple;
+}
+.icons {
+	display: block;
+	border: 1px dashed rebeccapurple;
+	
+}
+.left-icons {
+	display: flex;
+	margin: 1rem;
+}
+.left-icons img {
+	max-width: 150px;
+    max-height: 90px;
+    object-fit: contain;
+    align-self: center;
+}
+.left-icons div {
+	margin: 1em;
+}
+.login-area { 
+display: block;                                              /*||lateral direita login*/
+width: 35%;
+min-height: 100vh;
+align-items: center;
+justify-content: center;
+
+}
+.login {
+	background-color: rgb(220,220,250);
+	padding:1rem;
+	margin:1rem;
+	border:0.6rem double white;
+	Text-align: Center;
+	line-height: 1.5rem;
+	
+}
+span {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+.create-account {
+	background-color: rgb(220,220,250);
+	padding: 1rem;
+	margin: 1rem;
+	border: 0.6em double white;
+    text-align: center;	
+}
+.bottom {
+	display: inline-block;
+	width: 35%;
+	background: linear-gradient(0deg, rgba(200,200,200,0.85) 2%,
+                                      rgba(180,180,180,1) 50%, 
+									  rgba(200,200,200,0.8) 98%);
+	border: 1px solid rgb(100,100,100);
+	border-radius:0.3em;
+	text-decoration: none;
+	margin: 1rem;
+	padding: 0.5rem;
+	text-align: center;
+}
+.bottom:hover {
+	background: linear-gradient(0deg, rgba(240,240,240,0.85) 2%,
+                                      rgba(200,200,200,1) 50%, 
+									  rgba(240,240,240,0.8) 98%);
+}
+
+@media (max-width: 1024px) {
+.orkut-wrapper {
+	width: 90%;
+   }
+}
+@media (max-width: 800px) {
+
+.icons {
+	width: 70%;
+   }
+.left-icons img { 
+   display: none;
+}
+.login-area {
+	width: 50%;
+}
+}
+@media (max-width: 650px) {
+.orkut-wrapper {
+	border: 10px solid lightblue;
+   }
+
+.icons {
+	display: none;
+   }
+.login-area {
+	 width: 100%;
+   }
+.logo {
+	display: none;
+}
+.change-logo {
+	display: block;
+}
+.change-logo img {
+	object-fit: cover;
+	width: 100%;
+}
+.main-logo {
+	display: block;
+	align-items; center;
+}
+.welcome {
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	border-radius: unset;
+}	
+}
+	
+    	
